@@ -9,9 +9,10 @@ This collection includes implementations of common network topologies with visua
 ## Available Topologies
 
 ### 1. Bus Topology (`bus-topo.cc`)
+
 - **Description**: A linear bus network with 20 nodes connected to a shared medium
 - **Technology**: CSMA (Carrier Sense Multiple Access)
-- **Configuration**: 
+- **Configuration**:
   - Data Rate: 100 Mbps
   - Delay: 6560 nanoseconds
   - IP Range: 10.3.0.0/24
@@ -19,6 +20,7 @@ This collection includes implementations of common network topologies with visua
 - **Visualization**: `bus.png`, `buscode.png`
 
 ### 2. Star Topology (`star-topo.cc`)
+
 - **Description**: Central hub with 15 spoke nodes in a star configuration
 - **Technology**: Point-to-Point links
 - **Configuration**:
@@ -29,6 +31,7 @@ This collection includes implementations of common network topologies with visua
 - **Visualization**: `star1.png`, `starcode1.png`
 
 ### 3. Ring Topology (`ring-topo.cc`)
+
 - **Description**: 16 nodes connected in a circular ring pattern
 - **Technology**: Point-to-Point links
 - **Configuration**:
@@ -39,6 +42,7 @@ This collection includes implementations of common network topologies with visua
 - **Visualization**: `ring.png`, `ring code.png`
 
 ### 4. Hybrid Topology (`hybrid-topo.cc`)
+
 - **Description**: Combination of star and bus topologies with a central hub
 - **Technology**: Mixed Point-to-Point and CSMA
 - **Configuration**:
@@ -50,6 +54,7 @@ This collection includes implementations of common network topologies with visua
 - **Visualization**: `hybrid.png`, `hybridcode.png`
 
 ### 5. Tree Topology (`tree.cc`)
+
 - **Description**: Hierarchical tree structure (similar to star but with tree positioning)
 - **Technology**: Point-to-Point links
 - **Configuration**:
@@ -60,6 +65,7 @@ This collection includes implementations of common network topologies with visua
 - **Output**: `star-topo.xml`
 
 ### 6. Point-to-Point Chain (`p2p-chain.xml`)
+
 - **Description**: Linear chain of point-to-point connected nodes
 - **Configuration**: XML-based topology definition
 - **Visualization**: `p2p1 pic.png`, `p2p1.png`
@@ -74,18 +80,19 @@ This collection includes implementations of common network topologies with visua
 ## Installation and Setup
 
 1. **Install NS-3**:
+
    ```bash
    # Download and extract NS-3
    wget https://www.nsnam.org/releases/ns-3.35.tar.bz2
    tar xjf ns-3.35.tar.bz2
    cd ns-3.35
-   
+
    # Configure and build
    ./ns3 configure --enable-examples --enable-tests
    ./ns3 build
    ```
-
 2. **Install NetAnim** (if not included):
+
    ```bash
    # NetAnim is usually included with NS-3
    # If separate installation is needed:
@@ -125,17 +132,18 @@ cp *.cc /path/to/ns-3/scratch/
 After running the simulations, use NetAnim to visualize the network topologies:
 
 1. **Launch NetAnim**:
+
    ```bash
    # From NS-3 directory
    ./netanim
    ```
-
 2. **Load Animation Files**:
+
    - Open NetAnim
    - File → Open XML
    - Select the generated `.xml` files (e.g., `bus-topo.xml`)
-
 3. **Playback Controls**:
+
    - Use play/pause buttons to control animation
    - Adjust speed slider for playback rate
    - Zoom in/out for better visualization
@@ -171,13 +179,13 @@ CN NS3/
 
 ### Common Configurations
 
-| Topology | Data Rate | Delay | Nodes | IP Range |
-|----------|-----------|-------|-------|----------|
-| Bus | 100 Mbps | 6560 ns | 20 | 10.3.0.0/24 |
-| Star | 5 Mbps | 2 ms | 16 | 10.1.0.0/24 |
-| Ring | 5 Mbps | 2 ms | 16 | 10.4.0.0/24 |
-| Hybrid | 10/100 Mbps | - | 25 | 10.5.0.0/24 |
-| Tree | 5 Mbps | 2 ms | 16 | 10.1.0.0/24 |
+| Topology | Data Rate   | Delay   | Nodes | IP Range    |
+| -------- | ----------- | ------- | ----- | ----------- |
+| Bus      | 100 Mbps    | 6560 ns | 20    | 10.3.0.0/24 |
+| Star     | 5 Mbps      | 2 ms    | 16    | 10.1.0.0/24 |
+| Ring     | 5 Mbps      | 2 ms    | 16    | 10.4.0.0/24 |
+| Hybrid   | 10/100 Mbps | -       | 25    | 10.5.0.0/24 |
+| Tree     | 5 Mbps      | 2 ms    | 16    | 10.1.0.0/24 |
 
 ## Customization
 
@@ -204,16 +212,17 @@ Each `.cc` file can be customized by modifying:
 ### Common Issues
 
 1. **Compilation Errors**:
+
    - Ensure NS-3 is properly installed and configured
    - Check that all required modules are enabled
    - Verify file permissions
-
 2. **Animation Not Working**:
+
    - Ensure NetAnim is properly installed
    - Check that XML files are generated
    - Verify file paths in NetAnim
-
 3. **Missing Modules**:
+
    ```bash
    # Enable specific modules
    ./ns3 configure --enable-modules=csma,point-to-point,internet
@@ -222,6 +231,7 @@ Each `.cc` file can be customized by modifying:
 ## Educational Use
 
 This project is designed for:
+
 - **Network Education**: Understanding different topology structures
 - **Research**: Protocol testing and performance analysis
 - **Visualization**: Network behavior demonstration
@@ -240,6 +250,7 @@ This project is provided for educational and research purposes. Please refer to 
 ## Contributing
 
 Feel free to contribute additional topologies, improvements, or bug fixes by:
+
 1. Forking the project
 2. Creating feature branches
 3. Submitting pull requests
@@ -247,5 +258,6 @@ Feel free to contribute additional topologies, improvements, or bug fixes by:
 ---
 
 **Note**: This project focuses on topology visualization and basic network setup. For advanced simulations with traffic generation, routing protocols, or performance analysis, additional NS-3 modules and configurations may be required.
-#   C N - N S 3 - T o p o l o g y - c r e a t i o n  
- 
+#� �C�N�-�N�S�3�-�T�o�p�o�l�o�g�y�-�c�r�e�a�t�i�o�n�
+�
+�

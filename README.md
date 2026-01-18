@@ -258,6 +258,5 @@ Feel free to contribute additional topologies, improvements, or bug fixes by:
 ---
 
 **Note**: This project focuses on topology visualization and basic network setup. For advanced simulations with traffic generation, routing protocols, or performance analysis, additional NS-3 modules and configurations may be required.
-#� �C�N�-�N�S�3�-�T�o�p�o�l�o�g�y�-�c�r�e�a�t�i�o�n�
-�
-�
+
+
